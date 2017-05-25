@@ -1,0 +1,835 @@
+extends ../layout
+
+block content
+  .custom_content.custom
+    .container
+      .row
+        .col-xs-12.col-sm-8.custom_right
+          .single_content_left
+            h3 Apply for Admission
+            p
+              | Use this secure online application or 
+              a(href='#') download a PDF application
+              | . All applicants are welcome and encouraged to apply. Should you have any questions as you complete the 
+              a(href='#') admissions process
+              | , please contact our admissions office at (573) 777-9257 or flugumj@cislions.org. A non-refundable application fee of $30 must be submitted with the completed application form.
+            h3 Application From
+            form.apply_from(action='#', method='post')
+              h4 FAMILY INFORMATION
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Student First Name 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='sfname')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Preferred Name
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='pname')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Student Middle Name 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='mname')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Student Last Name 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='lname')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Suffix
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='suffix')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Gender 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      select.option-select(name='guiest_id2')
+                        option(value='0') Select
+                        option(value='1') Male
+                        option(value='2') Female
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Date of Birth  
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      .row
+                        .col-xs-6.col-sm-4
+                          select.option-select(name='month')
+                            option(value='') Month
+                            option(value='1') Jan
+                            option(value='2') Feb
+                            option(value='3') Mar
+                            option(value='4') Apr
+                            option(value='5') May
+                            option(value='6') Jun
+                            option(value='7') Jul
+                            option(value='8') Aug
+                            option(value='9') Sep
+                            option(value='10') Oct
+                            option(value='11') Nov
+                            option(value='12') Dec
+                        .col-xs-6.col-sm-4
+                          select.option-select(name='day')
+                            option(selected='selected', value='') Day
+                            option(value='1') 1
+                            option(value='2') 2
+                            option(value='3') 3
+                            option(value='4') 4
+                            option(value='5') 5
+                            option(value='6') 6
+                            option(value='7') 7
+                            option(value='8') 8
+                            option(value='9') 9
+                            option(value='10') 10
+                            option(value='11') 11
+                            option(value='12') 12
+                            option(value='13') 13
+                            option(value='14') 14
+                            option(value='15') 15
+                            option(value='16') 16
+                            option(value='17') 17
+                            option(value='18') 18
+                            option(value='19') 19
+                            option(value='20') 20
+                            option(value='21') 21
+                            option(value='22') 22
+                            option(value='23') 23
+                            option(value='24') 24
+                            option(value='25') 25
+                            option(value='26') 26
+                            option(value='27') 27
+                            option(value='28') 28
+                            option(value='29') 29
+                            option(value='30') 30
+                            option(value='31') 31
+                        .col-xs-12.col-sm-4.select-year
+                          select.option-select(name='year')
+                            option(selected='selected', value='') Year
+                            option(value='1997') 1997
+                            option(value='1998') 1998
+                            option(value='1999') 1999
+                            option(value='2000') 2000
+                            option(value='2001') 2001
+                            option(value='2002') 2002
+                            option(value='2003') 2003
+                            option(value='2004') 2004
+                            option(value='2005') 2005
+                            option(value='2006') 2006
+                            option(value='2007') 2007
+                            option(value='2008') 2008
+                            option(value='2009') 2009
+                            option(value='2010') 2010
+                            option(value='2011') 2011
+                            option(value='2012') 2012
+                            option(value='2013') 2013
+                            option(value='2014') 2014
+                            option(value='2015') 2015
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Home Address  
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='home-add')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | City  
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='home-add')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | State  
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      select.option-select(name='state')
+                        option(selected='selected', value='') Select State
+                        option(value='AL') Alabama
+                        option(value='AK') Alaska
+                        option(value='AS') American Samoa
+                        option(value='AZ') Arizona
+                        option(value='AR') Arkansas
+                        option(value='CA') California
+                        option(value='CO') Colorado
+                        option(value='CT') Connecticut
+                        option(value='DE') Delaware
+                        option(value='DC') District of Columbia
+                        option(value='FL') Florida
+                        option(value='GA') Georgia
+                        option(value='GU') Guam
+                        option(value='HI') Hawaii
+                        option(value='ID') Idaho
+                        option(value='IL') Illinois
+                        option(value='IN') Indiana
+                        option(value='IA') Iowa
+                        option(value='KS') Kansas
+                        option(value='KY') Kentucky
+                        option(value='LA') Louisiana
+                        option(value='ME') Maine
+                        option(value='MH') Marshall Islands
+                        option(value='MD') Maryland
+                        option(value='MA') Massachusetts
+                        option(value='MI') Michigan
+                        option(value='MN') Minnesota
+                        option(value='MS') Mississippi
+                        option(value='MO') Missouri
+                        option(value='MT') Montana
+                        option(value='NE') Nebraska
+                        option(value='NV') Nevada
+                        option(value='NH') New Hampshire
+                        option(value='NJ') New Jersey
+                        option(value='NM') New Mexico
+                        option(value='NY') New York
+                        option(value='NC') North Carolina
+                        option(value='ND') North Dakota
+                        option(value='MP') Northern Marianas Islands
+                        option(value='OH') Ohio
+                        option(value='OK') Oklahoma
+                        option(value='OR') Oregon
+                        option(value='PW') Palau
+                        option(value='PA') Pennsylvania
+                        option(value='PR') Puerto Rico
+                        option(value='RI') Rhode Island
+                        option(value='SC') South Carolina
+                        option(value='SD') South Dakota
+                        option(value='TN') Tennessee
+                        option(value='TX') Texas
+                        option(value='UT') Utah
+                        option(value='VT') Vermont
+                        option(value='VI') Virgin Islands
+                        option(value='VA') Virginia
+                        option(value='WA') Washington
+                        option(value='WV') West Virginia
+                        option(value='WI') Wisconsin
+                        option(value='WY') Wyoming
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Zip Code  
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='zip-code')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Home Phone
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='home-phone')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | School Year Applying For  
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      select.option-select(name='year')
+                        option(selected='selected', value='') Year
+                        option(value='1') c
+                        option(value='2') 2016-2017
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Grade Applying For  
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      select.option-select(name='grade')
+                        option(selected='selected', value='') Select
+                        option(value='1') Junior Kindergarten
+                        option(value='2') Kindergarten
+                        option(value='3') 1st
+                        option(value='4') 2nd
+                        option(value='5') 3rd
+                        option(value='6') 4th
+                        option(value='7') 5th
+                        option(value='8') 6th
+                        option(value='9') 7th
+                        option(value='10') 8th
+                        option(value='11') 9th
+                        option(value='12') 10th
+                        option(value='13') 11th
+                        option(value='14') 12th
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Is the Applicant a U.S. Citizen?  
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      select.option-select(name='citizen')
+                        option(selected='selected', value='') Select
+                        option(value='1') Yes
+                        option(value='2') No
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label If no, is this student a permanent resident of the U.S.?
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      select.option-select(name='citizen')
+                        option(selected='selected', value='') None
+                        option(value='1') Yes
+                        option(value='2') No
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label If no, is this student in the U.S. on a student visa? 
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      select.option-select(name='citizen')
+                        option(selected='selected', value='') None
+                        option(value='1') Yes
+                        option(value='2') No
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Students requiring an I-20 must complete the international student application. Please contact the admissions office.
+              // end form group
+              h4 PARENT/GUARDIAN #1
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Salutation 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      select.option-select(name='salutation')
+                        option(value='1') Mr.
+                        option(value='2') Ms.
+                        option(value='3') Mrs.
+                        option(value='4') Dr.
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Full Name 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='fname')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Relationship to Applicant  
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='relationship')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Home Address (include city/state/zip)
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='home-add')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Email Address 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='email')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Cell Phone 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='phone')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Employer  
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='Employer')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Occupation/Position 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='Occupation')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Office Phone
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='office-phone')
+              // end form group
+              h4 PARENT/GUARDIAN #2
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Salutation
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      select.option-select(name='salutation')
+                        option(value='1') Mr.
+                        option(value='2') Ms.
+                        option(value='3') Mrs.
+                        option(value='4') Dr.
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Full Name
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='fname')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Relationship to Applicant
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='relationship')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Home Address (include city/state/zip)
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='home-add')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Email Address
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='email')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Cell Phone
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='phone')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Employer
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='Employer')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Occupation/Position
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='Occupation')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Office Phone
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='office-phone')
+              // end form group
+              h4 EDUCATION
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Student's Current Grade 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      select.option-select(name='grade')
+                        option(selected='selected', value='') Select
+                        option(value='1') JK
+                        option(value='2') K
+                        option(value='3') 1st
+                        option(value='4') 2nd
+                        option(value='5') 3rd
+                        option(value='6') 4th
+                        option(value='7') 5th
+                        option(value='8') 6th
+                        option(value='9') 7th
+                        option(value='10') 8th
+                        option(value='11') 9th
+                        option(value='12') 10th
+                        option(value='13') 11th
+                        option(value='14') 12th
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Name of Student's Current School 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='name')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Dates of Attendance 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='attendance')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | School Address 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='school-address')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | School City/State/Zip  
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='zip')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | School Phone Number 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='phone')
+              // end form group
+              h4 PARENT/GUARDIAN QUESTIONS
+              p Please answer the following questions completely and candidly. 
+              .form-group
+                .row
+                  .col-xs-12
+                    .label
+                      | Please describe your child's special interests or skills. 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      textarea.form-control(rows='10', cols='10')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12
+                    .label
+                      | Please describe the type of setting in which your child learns best. 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      textarea.form-control(rows='10', cols='10')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12
+                    .label
+                      | Please describe your child's academic strengths and weaknesses. 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      textarea.form-control(rows='10', cols='10')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12
+                    .label
+                      | Has your child received any assistance in the form of special education programming, including gifted and/or talented, behavioral intervention, or English as a Second Language instruction? If yes, please explain. 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      textarea.form-control(rows='10', cols='10')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12
+                    .label
+                      | Does your child have any health irregularities, allergies, or educational challenges that might interfere with admission testing or normal classroom and/or physical education activities? If yes, please explain. 
+                      span.error *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      textarea.form-control(rows='10', cols='10')
+              // end form group
+              h4 MIDDLE/UPPER SCHOOL (6-12TH GRADE) APPLICANT QUESTIONS
+              p
+                | ONLY prospective students entering 6th through 12th grades should answer the following questions. The information provided assists the admissions committee in gaining a better understanding of the student.
+              .form-group
+                .row
+                  .col-xs-12
+                    .label
+                      | Think about a person whom you admire (parent, relative, friend., athlete, famous person from history, character in a book, etc.). Please describe what you admire about that person and why.
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      textarea.form-control(rows='10', cols='10')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12
+                    .label
+                      | Describe a personal challenge you have overcome or a personal accomplishment. How did you overcome the challenge or achieve the accomplishment?
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      textarea.form-control(rows='10', cols='10')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Application Fee
+                      span *
+                  .col-xs-12.col-sm-8
+                    .text-field.custom
+                      span.field-prefix $
+                      input.form-control(type='text', name='fee')
+              // end form group
+              p Application fee of $30 is nonrefundable. 
+              h4 Payment
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | First name 
+                      span *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='fname')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Last name 
+                      span *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='lname')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Email 
+                      span *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='email')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label Card type
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      ul.card-type
+                        li
+                          input#radio01(type='radio', name='card')
+                          label(for='radio01')
+                            span
+                              img(src='/scholarship/img/apply/visa.png', alt='')
+                        li
+                          input#radio02(type='radio', name='card')
+                          label(for='radio02')
+                            span
+                              img(src='/scholarship/img/apply/mc.png', alt='')
+                        li
+                          input#radio03(type='radio', name='card')
+                          label(for='radio03')
+                            span
+                              img(src='/scholarship/img/apply/discover.png', alt='')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Card number 
+                      span *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='card')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-4
+                    .label
+                      | Security code 
+                      span *
+                  .col-xs-12.col-sm-8
+                    .text-field
+                      input.form-control(type='text', name='security')
+              // end form group
+              .form-group
+                .row
+                  .col-xs-12.col-sm-6
+                    .text-field
+                      select.option-select(name='month')
+                        option(value='01') 01- January
+                        option(value='02') 02- February
+                        option(value='03') 03- March
+                        option(value='04') 04- April
+                        option(value='05') 05- May
+                        option(value='06') 06- June
+                        option(value='07') 07- July
+                        option(value='08') 08- August
+                        option(value='09') 09- September
+                        option(value='10') 10- October
+                        option(value='11') 11- November
+                        option(value='12') 12- December
+                  .col-xs-12.col-sm-6.custom_margin
+                    .text-field
+                      select.option-select(name='year')
+                        option(value='15') 2015
+                        option(value='16') 2016
+                        option(value='17') 2017
+                        option(value='18') 2018
+                        option(value='19') 2019
+                        option(value='20') 2020
+                        option(value='21') 2021
+                        option(value='22') 2022
+                        option(value='23') 2023
+                        option(value='24') 2024
+              // end form group
+              input.commonBtn(type='submit', value='Submit')
+        .col-xs-12.col-sm-4.col-md-4.custom_left
+          .sidebar
+            .sidebar_item.admission
+              .item_inner.program
+                ul
+                  li
+                    a(href='about.html') About Royal College
+                  li
+                    a(href='campus.html') Campus Life
+                  li
+                    a(href='international_students.html') International Students
+                  li
+                    a(href='buying-steps.html') Admission
+                  li
+                    a(href='course-fullwidth.html') Courses
+                  li.active
+                    a(href='buying-steps.html') Apply Now
+            // end sidebar item
+            .list_block
+              .formArea.admission
+                .formTitle
+                  h3 Find a Course
+                  p
+                    | Offered in small class sizes with great emphasis on the demands of the specification and exam technique.
+                // formTitle
+                form(action='#', method='post')
+                  .selectBox.clearfix
+                    select#guiest_id1(name='guiest_id1')
+                      option(value='0') Location
+                      option(value='1') Location_1
+                      option(value='2') Location_2
+                      option(value='3') Location_3
+                  // selectBox
+                  .selectBox.clearfix
+                    select#guiest_id2(name='guiest_id2')
+                      option(value='0') Level
+                      option(value='1') Level_1
+                      option(value='2') Level_2
+                      option(value='3') Level_3
+                  // selectBox
+                  .form-group
+                    input#exampleInputEmail1.form-control(type='text', placeholder='Course Name')
+                  button.btn.btn-default.btn-block.commonBtn(type='submit') Search
+              // formArea
+            .list_block
+              .newsletter
+                h3 Newsletter
+                form(method='post', action='#')
+                  .form-group
+                    input#exampleInputEmail1.form-control(type='text', placeholder='Email')
+                  button.btn.btn-default.btn-block.commonBtn(type='submit') Subscribe
+          // end sidebar
+      // end row
+  // end custom content
